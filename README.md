@@ -1,76 +1,116 @@
-# 💠 Front-End Design System Assignment
+# 📘 Front-End Design System Assignment
 
-A front-end UI design system built using:
+This is a complete front-end UI design system assignment built with:
 
-- ⚛ React + TypeScript
+- ⚛️ React + TypeScript
 - 🎨 Tailwind CSS
-- 📘 Storybook
-- ✅ Component-driven architecture
+- 📦 Storybook (with live deployment)
+- ✅ Fully validated multi-step form
+- 📊 Interactive data table with filters, pagination, selection
+- 🦴 Bonus: Loading skeletons and Storybook deployment
 
 ---
 
-## 🚀 Live Preview
+## 🔗 Live Demo
 
-- 🔗 App (Vercel): _**[To be added once deployed]**_
-- 🔗 Storybook (Vercel): _**[To be added once deployed]**_
-
----
-
-## 🗂️ Folder Structure
-
-src/
-components/
-DataTable/
-DataTable.tsx
-DataTable.stories.tsx
-WizardForm/
-WizardForm.tsx
-WizardForm.stories.tsx
-index.css (Tailwind + token-based color system)
-
+- 🌐 **Main App:** [design-system-nine-rho.vercel.app](https://design-system-nine-rho.vercel.app)
+- 📚 **Storybook:** [design-system-storybook.vercel.app](https://design-system-storybook-1amk5dlr9-krishna-singhals-projects.vercel.app)
 
 ---
 
-## 🧪 Run Locally
+## 🧩 Features
 
-```bash
+### ✅ Wizard Form
+- 3-step flow: Name → Email → Password
+- Form validation on each step
+- Navigation with “Next” and “Back” buttons
+
+### ✅ Data Table
+- Lists user records with: ID, Name, Email, Role
+- Features:
+  - Pagination (5 items per page)
+  - Role-based filter dropdown
+  - Selectable rows (checkboxes)
+  - Column sorting
+
+### ✅ Loading Skeleton
+- Skeleton shown while data is loading
+
+### ✅ Storybook
+- All UI components documented in isolation
+- View and test independently
+- Live Storybook deployment included
+
+---
+
+## 📁 Folder Structure
+
+<pre>
+design-system/ 
+├── .storybook/ 
+│ ├── main.ts 
+│ └── preview.ts 
+├── public/ 
+│ ├── favicon.ico 
+│ ├── index.html 
+│ └── ...
+├── src/ 
+│ ├── components/ 
+│ │ ├── DataTable/ 
+│ │ │ ├── DataTable.tsx 
+│ │ │ └── DataTable.stories.tsx
+│ │ └── WizardForm/ 
+│ │ ├── WizardForm.tsx 
+│ │ └── WizardForm.stories.tsx 
+│ ├── stories/ 
+│ │ ├── Button.tsx 
+│ │ ├── Button.stories.ts 
+│ │ ├── Header.tsx 
+│ │ ├── Header.stories.ts 
+│ │ ├── Page.tsx 
+│ │ └── Page.stories.ts 
+│ ├── App.tsx 
+│ ├── App.test.tsx 
+│ ├── index.tsx 
+│ ├── index.css 
+│ ├── react-app-env.d.ts 
+│ ├── reportWebVitals.ts 
+│ └── setupTests.ts 
+├── storybook-static/ # (Only generated after `npm run build-storybook`) 
+├── tailwind.config.js 
+├── postcss.config.js 
+├── tsconfig.json 
+├── package.json 
+├── package-lock.json 
+├── .gitignore 
+└── README.md 
+ </pre>
+
+
+---
+
+## 🛠 Tech Stack
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Storybook](https://storybook.js.org/)
+- [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Getting Started Locally
+
+git clone https://github.com/Sortedsinghal/design-system.git
+
+cd design-system
+
 npm install
-npm start          # Run the main app
-npm run storybook  # Run Storybook (localhost:6006)
 
-🎯 Features
-🧾 Data Table
-✅ Sortable columns
+npm run dev      # Start app
 
-✅ Pagination
+npm run storybook  # Launch Storybook
 
-✅ Expandable rows with animation
 
-✅ Indeterminate checkbox logic
-
-✅ Loading skeleton before data
-
-✅ Role filter dropdown
-
-✅ Fully responsive
-
-🧭 Wizard Form
-✅ 3-step layout with state persistence
-
-✅ Required field validation
-
-✅ Navigation controls
-
-✅ Responsive layout
-
-✅ Final alert on submit
-
-📘 Storybook
-✅ Isolated rendering of components
-
-✅ Tailwind styles applied
-
-✅ Stories for DataTable and WizardForm
-
-📸 Screenshots
-<img src="screenshots/datatable.png" width="400" /> <img src="screenshots/wizardform.png" width="400" /> <img src="screenshots/storybook.png" width="400" />
+## To build Storybook for deployment:
+npm run build-storybook
