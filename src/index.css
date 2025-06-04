@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #9333ea;
+  --color-tertiary: #06b6d4;
+
+  --color-success: #22c55e;
+  --color-info: #0ea5e9;
+  --color-warning: #facc15;
+  --color-error: #ef4444;
+
+  --color-bg: #ffffff;
+  --color-surface: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-text: #1e293b;
+}
+
+.dark {
+  --color-bg: #1e293b;
+  --color-surface: #334155;
+  --color-border: #475569;
+  --color-text: #f1f5f9;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+
+@keyframes slide-fade {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide {
+  animation: slide-fade 0.25s ease-in-out;
+}
+
