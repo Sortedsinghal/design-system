@@ -100,7 +100,7 @@ design-system/
 ---
 
 ## 🚀 Getting Started Locally
-
+``` bash
 git clone https://github.com/Sortedsinghal/design-system.git
 
 cd design-system
@@ -110,7 +110,7 @@ npm install
 npm run dev      # Start app
 
 npm run storybook  # Launch Storybook
-
+```
 
 ## To build Storybook for deployment:
 npm run build-storybook
